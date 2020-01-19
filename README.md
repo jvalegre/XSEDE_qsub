@@ -1,2 +1,4 @@
 # XSEDE_qsub
-Script to send jobs to Commet and Bridges on XSEDE. Includes multiple options such as number of processors and nodes, type of queue, account, time, etc
+Script to send jobs to Commet and Bridges on XSEDE. Includes multiple options such as number of processors and nodes, type of queue, account, time, etc.
+
+*** INSTRUCTIONS ARE COMING SOON - RIGHT NOW IT'S SET-UP FOR THE PATON GROUP ***
