@@ -8,11 +8,17 @@ Also, if you want to use different partitions, add it to the lists at the begini
 
 ## Options
 \*.com: takes all the com files in your working directory. Individual files can also be defined (i.e. FILENAME.com) 
+
 -t: time. Default: 48 hours
+
 --cluster: specify the cluster to run the calcs in. Options: comet, bridges
+
 --chk: include this if you want to create chk files
+
 --wfn: include this if you want to create wfn files
+
 --acomet and --abridges: account that you are using to send the calculations. Additional accounts can be added
+
 --pcomet and --pbridges: partitions where you want to run the calculations. Options Comet: shared,compute,debug. Options Bridges: RM-shared,RM,RM-small. More options can be added manually.
 
 ## Examples of command lines to run the script
