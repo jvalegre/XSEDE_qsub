@@ -9,7 +9,7 @@ Also, if you want to use different partitions, add it to the lists at the begini
 ## Options
 \*.com: takes all the com files in your working directory. Individual files can also be defined (i.e. FILENAME.com) 
 
--t: time. Default: 48 hours
+-t: time. Default: 48 hours (format: 48:00:00, hh:mm:ss)
 
 --cluster: specify the cluster to run the calcs in. Options: comet, bridges
 
