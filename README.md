@@ -3,6 +3,11 @@
 
 (2) Request Gaussian permissions for the Comet and Bridges clusters (send an email to the help desk (it's help@xsede.org as of 2020) requesting the permissions, not through the XSEDE user portal). 
 
+(3) To connect to the clusters (as of 2020), SFTP/SSH access:\n
+Bridges --> bridges.psc.xsede.org\n
+Comet --> comet.sdsc.xsede.org\n
+
+
 # XSEDE_qsub
 Script to send jobs to Comet and Bridges on XSEDE. It reads Gaussian com files and uses the memory and number of processors specified in those com files (with %mem and %nproc or %nprocshared keywords).
 
