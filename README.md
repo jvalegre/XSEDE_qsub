@@ -1,11 +1,11 @@
 # Prerequisites:
-(1) Create an account in XSEDE
+    (1) Create an account in XSEDE
 
-(2) Request Gaussian permissions for the Comet and Bridges clusters (send an email to the help desk (it's help@xsede.org as of 2020) requesting the permissions, not through the XSEDE user portal). 
+    (2) Request Gaussian permissions for the Comet and Bridges clusters (send an email to the help desk (it's help@xsede.org as of 2020) requesting the permissions, not through the XSEDE user portal). 
 
-(3) To connect to the clusters (as of 2020), SFTP/SSH access:\n
-Bridges --> bridges.psc.xsede.org\n
-Comet --> comet.sdsc.xsede.org\n
+    (3) To connect to the clusters (as of 2020), SFTP/SSH access:
+    Bridges --> bridges.psc.xsede.org
+    Comet --> comet.sdsc.xsede.org
 
 
 # XSEDE_qsub
