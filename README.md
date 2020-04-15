@@ -6,6 +6,7 @@
     (3) To connect to the clusters (as of 2020), host names for the SFTP/SSH program or terminal:
     Bridges --> bridges.psc.xsede.org
     Comet --> comet.sdsc.xsede.org
+    ** These are not webpages, these are host names to use in SFTP/SSH clients (i.e. WinSCP, Putty, ForkLift, FileZilla...) or in a terminal
 
 
 # XSEDE_qsub
