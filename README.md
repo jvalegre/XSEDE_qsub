@@ -3,7 +3,7 @@
 
     (2) Request Gaussian permissions for the Comet and Bridges clusters (send an email to the help desk (it's help@xsede.org as of 2020) requesting the permissions, not through the XSEDE user portal). 
 
-    (3) To connect to the clusters (as of 2020), SFTP/SSH access:
+    (3) To connect to the clusters (as of 2020), host names for the SFTP/SSH program or terminal:
     Bridges --> bridges.psc.xsede.org
     Comet --> comet.sdsc.xsede.org
 
