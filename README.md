@@ -33,6 +33,6 @@
     --pcomet and --pbridges: partitions where you want to run the calculations. Options Comet: shared,compute,debug. Options Bridges: RM-shared,RM,RM-small. More options can be added manually.
 
 ## Examples of command lines to run the script
-    python XSEDE_qsub \*.com -t 36:00:00 --cluster comet --acomet cst152 --pcomet shared --chk
+    python XSEDE_qsub.py \*.com -t 36:00:00 --cluster comet --acomet cst152 --pcomet shared --chk
 
     \** It's convenient to create aliases depending on the cluster you are using (i.e. for Comet, alias sub="python XSEDE_qsub --cluster comet")
