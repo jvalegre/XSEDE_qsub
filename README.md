@@ -18,7 +18,7 @@
     Also, if you want to use different partitions, add it to the lists at the begining of the script (PARTITION_LIST_COMET for Comet partitions and PARTITION_LIST_BRIDGES for Bridges partitions.
 
 ## Options
-    \*.com: takes all the com files in your working directory. Individual files can also be defined (i.e. FILENAME.com) 
+    *.com: takes all the com files in your working directory. Individual files can also be defined (i.e. FILENAME.com) 
 
     -t: time. Default: 48 hours (format: 48:00:00, hh:mm:ss)
 
@@ -33,6 +33,6 @@
     --pcomet and --pbridges: partitions where you want to run the calculations. Options Comet: shared,compute,debug. Options Bridges: RM-shared,RM,RM-small. More options can be added manually.
 
 ## Examples of command lines to run the script
-    python XSEDE_qsub.py \*.com -t 36:00:00 --cluster comet --acomet cst152 --pcomet shared --chk
+    python XSEDE_qsub.py *.com -t 36:00:00 --cluster comet --acomet cst152 --pcomet shared --chk
 
     \** It's convenient to create aliases depending on the cluster you are using (i.e. for Comet, alias sub="python XSEDE_qsub --cluster comet")
