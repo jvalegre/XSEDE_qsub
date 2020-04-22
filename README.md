@@ -33,8 +33,6 @@
     --pcomet and --pbridges: partitions where you want to run the calculations. Options Comet: shared,compute,debug. Options Bridges: RM-shared,RM,RM-small. More options can be added manually. By default, is less than the max number of processors (24 in Comet and 28 in Bridges) is used, the "shared" and "RM-shared" partitions are used. Otherwise, the "compute" and "RM" partitions are set as default automatically by the script.
 
 ## Examples of command lines to run the script
-    XSEDE_qsub.py --cluster comet --acomet cst152 *.com -t 36:00:00 --chk
-
     It's convenient to create aliases depending on the cluster you are using (i.e. for Comet, alias sub="XSEDE_qsub --cluster comet"). To create an alias, edit your .bashrc file (.bashrc is in your home folder, it can be edited as a text file) and add, for example:
     
     alias sub='/PATH/XSEDE_qsub.py --cluster comet'
