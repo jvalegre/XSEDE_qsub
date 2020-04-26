@@ -33,7 +33,7 @@
     --pcomet and --pbridges: partitions where you want to run the calculations. Options Comet: shared,compute,debug. Options Bridges: RM-shared,RM,RM-small. More options can be added manually. By default, is less than the max number of processors (24 in Comet and 28 in Bridges) is used, the "shared" and "RM-shared" partitions are used. Otherwise, the "compute" and "RM" partitions are set as default automatically by the script.
 
 ## Examples of command lines to run the script
-    It's convenient to create aliases depending on the cluster you are using (i.e. for Comet, alias sub="XSEDE_qsub --cluster comet"). To create an alias, edit your .bashrc file (.bashrc is in your home folder, it can be edited as a text file) and add, for example:
+    It's convenient to create aliases depending on the cluster you are using (i.e. for Comet, alias sub="XSEDE_qsub --cluster comet"). To create an alias, edit your .bashrc file. .bashrc is a file that is already created in your home folder and can be edited as a text file, HOWEVER, by default it's hidden in your SFTP/SSH client. You can either change the settings of your client to see hidden files or use the XSEDE terminal and use the 'vim' command to edit the file. After you found the .bashrc file, edit it and add, for example:
     
     alias sub='/PATH/XSEDE_qsub.py --cluster comet'
     
@@ -41,14 +41,14 @@
     
     alias sub='/home/jvalegre/bin/XSEDE_qsub.py --cluster comet'
     
-    After you set the alias, you can type "sub" to call the script from the folder it is stored and it would be like typing all the sentence you specified in the alias. So, for example, this is how I would call the script with and without the alias:
+    After you set the alias, you need to (only one time):
+    
+    (1) In the XSEDE terminal, go to your home folder where .bashrc is and type 'source .bashrc' (to update the content of .bashrc in your current session)
+    (2) Go to where the XSEDE_qsub.py script is (in my case, "cd /home/jvalegre/bin") and type 'chmod 777 XSEDE_qsub.py' (this gives you rights to run the script)
+    
+    After these two steps, you can type "sub" to call the script from any folder (it would be like typing all the sentence you specified in the alias). So, for example, this is how I would call the script with the alias:
     
     The COM files I want to run are in the /home/jvalegre/test/ folder. In the terminal, I should go to that folder first ("cd /home/jvalegre/test/"). Then:
     
-    Without the alias:
-    (1) Copy the XSEDE_qsub.py script in the same folder.
-    (2) Run the script with: XSEDE_qsub.py --cluster comet --acomet cst152 *.com -t 36:00:00 --chk
-    
-    With the alias:
-    (1) Run the script with: sub --acomet cst152 *.com -t 36:00:00 --chk
+    (1) Run the script with: 'sub --acomet cst152 *.com -t 36:00:00 --chk'
     
