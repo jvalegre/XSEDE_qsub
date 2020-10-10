@@ -10,8 +10,12 @@ or suggestions to juanvi89@hotmail.com
 import os
 from argparse import ArgumentParser
 
-ACCOUNTS_LIST_COMET = ['cst123','cst127','cst128']
-ACCOUNTS_LIST_BRIDGES = ['ch5fq3p','ch5pj3p']
+# Comet allocations
+# 'cst129' for JVAR, 'cst123' for RSP
+
+# Bridges allocations
+# 'chz3asp' for JVAR, 'ch5fq3p' for RSP
+
 PARTITION_LIST_COMET = ['shared','compute','debug']
 PARTITION_LIST_BRIDGES = ['RM-shared','RM','RM-small']
 
@@ -94,9 +98,9 @@ if __name__ == "__main__":
     parser.add_argument('--cluster', type=str, default='', help='Cluster used (comet or bridges)')
     parser.add_argument('--chk', action="store_true", default=False, help='Copy .chk files into your home directory after jobs are done')
     parser.add_argument('--wfn', action="store_true", default=False, help='Copy .wfn files into your home directory after jobs are done')
-    parser.add_argument('--acomet', type=str, choices=ACCOUNTS_LIST_COMET, default=ACCOUNTS_LIST_COMET[0],
+    parser.add_argument('--acomet', type=str, default='cst129',
                             help='Account to use for job in Comet')
-    parser.add_argument('--abridges', type=str, choices=ACCOUNTS_LIST_BRIDGES, default=ACCOUNTS_LIST_BRIDGES[0],
+    parser.add_argument('--abridges', type=str, default='chz3asp',
                             help='Account to use for job in Bridges')
     parser.add_argument('--pcomet', choices=PARTITION_LIST_COMET, default=PARTITION_LIST_COMET[0],
                             help='Partition used in Comet')
